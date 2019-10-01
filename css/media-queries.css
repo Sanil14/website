@@ -17,6 +17,9 @@
     .sidepanel {
         background-color: rgba(219, 219, 219, 0.932);
     }
+    #aboutme .namecenter .text {
+        width: 98%;
+    }
 }
 
 
