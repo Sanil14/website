@@ -3,7 +3,7 @@
 
 /* Extra small devices (phones, 600px and down) */
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
     .namecenter h1 {
         text-align: center;
         font-size: 2.5em;
@@ -23,25 +23,9 @@
 }
 
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-
-@media only screen and (max-width: 600px) {
-    .namecenter h1 {
-        font-size: 2.5em;
-        text-align: center;
-    }
-    .non-typewriter p {
-        font-size: 2em;
-    }
-    .openbtn {
-        font-size: 1.5em !important;
-    }
-}
-
-
 /* Medium devices (landscape tablets, 768px and up) */
 
-@media only screen and (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 768px) {
     .namecenter h1 {
         font-size: 3.5em;
         text-align: center;
@@ -52,9 +36,12 @@
     .openbtn {
         font-size: 1.5em !important;
     }
+    #aboutme .namecenter .text {
+        width: 70%;
+    }
 }
 
-@media only screen and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
     .namecenter h1 {
         font-size: 4em;
         text-align: center;
