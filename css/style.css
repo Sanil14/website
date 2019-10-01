@@ -1,0 +1,270 @@
+body {
+    color: white;
+    background-color: black;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.namecenter {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+
+.namecenter h1 {
+    text-align: center;
+    padding: 0px 10px;
+    font-size: 5em;
+}
+
+.non-typewriter {
+    position: absolute;
+    top: 25%;
+}
+
+.non-typewriter p {
+    font-size: 4em;
+    font-family: 'Merriweather', serif;
+}
+
+.namecenter .openbtn {
+    position: absolute;
+    top: 2%;
+}
+
+.background {
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+.sidepanel {
+    height: 0px;
+    width: auto;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgba(219, 219, 219, 0.719);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    overflow: hidden;
+    transition: 2.5s;
+}
+
+.sidepanel>a~a {
+    cursor: pointer;
+    padding: 8px 80px 8px 32px;
+    text-decoration: none;
+    font-size: 2em;
+    color: black !important;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidepanel i {
+    color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.sidepanel a:hover {
+    color: #4b4b4b;
+}
+
+.sidepanel .closebtn {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 2em;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    top: 0;
+    right: 0;
+    font-size: 36px;
+}
+
+.sidepanel .socialmedia i {
+    color: white;
+    position: relative;
+    padding: 10px 6px 10px 6px;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidepanel .socialmedia i:hover {
+    color: #d6d6d6;
+}
+
+.sidepanel .socialmedia {
+    padding-left: 32px;
+    position: absolute;
+    bottom: 2%;
+}
+
+.sidepanel .socialmedia .tag {
+    font-family: 'Merriweather', serif;
+    font-size: 1em;
+    visibility: hidden;
+    width: auto;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+    position: absolute;
+    bottom: 100%;
+}
+
+.sidepanel .socialmedia a:hover .tag {
+    visibility: visible;
+}
+
+.openbtn {
+    font-size: 3em;
+    position: absolute !important;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    color: #333333
+}
+
+#intro {
+    width: 100%;
+    height: 100%;
+    transition: left linear 2s;
+}
+
+#aboutme {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: none;
+}
+
+.goback {
+    position: absolute;
+    left: 4%;
+    bottom: 5%;
+}
+
+.goback .tag {
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+    font-size: 1em;
+    visibility: hidden;
+    width: auto;
+    background-color: rgba(219, 219, 219, 0.719);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+    position: absolute;
+    bottom: 115%;
+}
+
+.goback:hover .tag {
+    cursor: pointer;
+    visibility: visible;
+}
+
+#aboutme .namecenter .text {
+    margin-top: 100px;
+    font-family: 'Roboto Slab', serif;
+    padding: 20px 10px;
+    width: 50%;
+    border-radius: 6px;
+    border: 2px solid rgba(218, 218, 218, 0.267);
+    transition: 1s;
+}
+
+#aboutme .namecenter .text:hover {
+    color: black;
+    border: 2px solid rgba(218, 218, 218, 0.678);
+    background-color: rgba(219, 219, 219, 0.719);
+}
+
+
+/* Icon 3 */
+
+#nav-icon3 {
+    width: 60px;
+    height: 45px;
+    position: relative;
+    margin: 50px auto;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+#nav-icon3 span {
+    display: block;
+    position: absolute;
+    height: 9px;
+    width: 100%;
+    background: #e2e2e2;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+#nav-icon3 span:nth-child(1) {
+    top: 0px;
+}
+
+#nav-icon3 span:nth-child(2),
+#nav-icon3 span:nth-child(3) {
+    top: 18px;
+}
+
+#nav-icon3 span:nth-child(4) {
+    top: 36px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}

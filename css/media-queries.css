@@ -1,0 +1,62 @@
+/* MEDIA QUERIES */
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .namecenter h1 {
+        text-align: center;
+        font-size: 2.5em;
+    }
+    .non-typewriter p {
+        font-size: 2em;
+    }
+    .openbtn {
+        font-size: 1.5em !important;
+    }
+    .sidepanel {
+        background-color: rgba(219, 219, 219, 0.932);
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (max-width: 600px) {
+    .namecenter h1 {
+        font-size: 2.5em;
+        text-align: center;
+    }
+    .non-typewriter p {
+        font-size: 2em;
+    }
+    .openbtn {
+        font-size: 1.5em !important;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (max-width: 768px) {
+    .namecenter h1 {
+        font-size: 3.5em;
+        text-align: center;
+    }
+    .non-typewriter p {
+        font-size: 3em;
+    }
+    .openbtn {
+        font-size: 1.5em !important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .namecenter h1 {
+        font-size: 4em;
+        text-align: center;
+    }
+    .non-typewriter p {
+        font-size: 3.5em;
+    }
+}
